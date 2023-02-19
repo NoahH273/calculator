@@ -6,33 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="calculator">
-        <div class="output">
-
-        </div>
+        <div class="output"></div>
         <div class="utils">
-            <button class="operation util">Clear</button>
-            <button class="operation util">Del</button>
+            <button class="operation util" id="clear">Clear</button>
+            <button class="operation util" id="del">Del</button>
         </div>
         <div class="buttons">
-            <button class="operation left-edge">1</button>
-            <button class="operation">2</button>
-            <button class="operation">3</button>
-            <button class="operation right-edge">+</button>
-            <button class="operation left-edge">4</button>
-            <button class="operation">5</button>
-            <button class="operation">6</button>
-            <button class="operation right-edge">-</button>
-            <button class="operation left-edge">7</button>
-            <button class="operation">8</button>
-            <button class="operation">9</button>
-            <button class="operation right-edge">x</button>
-            <button class="operation left-edge">.</button>
-            <button class="operation">0</button>
-            <button class="operation">=</button>
-            <button class="operation right-edge">&divide;</button>
+            <button class="num operation left-edge">1</button>
+            <button class="num operation">2</button>
+            <button class="num operation">3</button>
+            <button class="operation right-edge operator">&plus;</button>
+            <button class="num operation left-edge">4</button>
+            <button class="num operation">5</button>
+            <button class="num operation">6</button>
+            <button class="operation right-edge operator">&minus;</button>
+            <button class="num operation left-edge">7</button>
+            <button class="num operation">8</button>
+            <button class="num operation">9</button>
+            <button class="operation right-edge operator">&times;</button>
+            <button class="operation left-edge" id="decimal">.</button>
+            <button class="num operation">0</button>
+            <button class="operation" id="equals">=</button>
+            <button class="operation right-edge operator">&divide;</button>
         </div>
     </div>
 </body>

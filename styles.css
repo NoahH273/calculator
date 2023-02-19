@@ -14,26 +14,39 @@ body {
     border-radius: 25px;
     background-color: gray;
     border: 5px solid black;
-    display: column;
     align-items: center;
     padding: 25px;
 }
 .output {
     margin: 0 0 25px;
     flex: 1;
-    min-height: 75px;
+    min-height: 100px;
+    height: auto;
     border-radius: 10px;
     background-color: white;
+    font-size: 25px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    word-wrap: break-word;
+    word-break: break-all;
+    flex-flow: column wrap;
+
 }
 .operation {
+    appearance: none;
     min-width: 75px;
     min-height: 75px;
-    font-size: 20px;
-    border: 1px solid black;
+    font-size: 25px;
     border-radius: 10px;
     flex: 1;
     margin: 5px;
+    border: 1px solid black;
 }
+.operation:hover {
+    background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+  }
 .buttons{
     flex: 1;
     display: flex;
@@ -53,4 +66,20 @@ body {
 }
 .operation.util {
     margin: 0;
+}
+.operation.num {
+    background-color: #c78126;
+}
+.operation.operator {
+    background-color: #5c5955;
+    color:#000000
+}
+#clear {
+    background-color: #23a0d1;
+}
+#del {
+    background-color: #23e653;
+}
+#equals, #decimal {
+    background-color: #868e91;
 }
